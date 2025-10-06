@@ -8,7 +8,7 @@ def get_video_info(input_file):
     size_mb = size_bytes / (1024 * 1024)
     return size_mb
 
-def compress_video(input_file, output_file, crf=23, preset='medium'):
+def compress_video(input_file, output_file, crf=23, preset='slow'):
     """
     Compress video using H.264 codec with CRF encoding
     
@@ -93,13 +93,7 @@ def main():
     # 23 = default (good quality, balanced)
     # 28 = acceptable quality (smaller file)
     
-    #compress_video(input_file, output_file, crf=23, preset='medium')
-    
-    # For even better compression (slower):
-     compress_video(input_file, output_file, crf=23, preset='slow')
-    
-    # For best quality (visually lossless):
-    # compress_video(input_file, output_file, crf=18, preset='slow')
+    compress_video(input_file, output_file, crf=23, preset='slow')
 
 if __name__ == '__main__':
     main()
