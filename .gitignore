@@ -1,0 +1,4 @@
+*.mp4
+files/*
+inputs/
+outputs/

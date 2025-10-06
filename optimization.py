@@ -93,10 +93,10 @@ def main():
     # 23 = default (good quality, balanced)
     # 28 = acceptable quality (smaller file)
     
-    compress_video(input_file, output_file, crf=23, preset='medium')
+    #compress_video(input_file, output_file, crf=23, preset='medium')
     
     # For even better compression (slower):
-    # compress_video(input_file, output_file, crf=23, preset='slow')
+     compress_video(input_file, output_file, crf=23, preset='slow')
     
     # For best quality (visually lossless):
     # compress_video(input_file, output_file, crf=18, preset='slow')
